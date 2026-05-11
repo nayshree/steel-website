@@ -190,7 +190,7 @@ ul,li{
 	position:absolute;
 	content: "\f12a";
 	left:0px;
-	top:14px;
+	top:0px;
 	color:#f55b14;
 	font-size:22px;
 	font-family: "Flaticon";
@@ -1750,7 +1750,7 @@ img{
 
 .main-menu .navigation > li > ul > li > ul{
 	position:absolute;
-	left:109%;
+	left:100%;
 	top:0px;
 	width:270px;
 	z-index:100;
@@ -2148,6 +2148,7 @@ img{
 	position:relative;
 	margin-top:-65px;
 	display:inline-block;
+	width:100%;
 }
 
 .services-block{
@@ -2406,10 +2407,12 @@ img{
 	padding:0px 30px;
 }
 
-.market-section .row .m-block:nth-child(2) .inner-box:after,
 .market-section .row .m-block:nth-child(3) .inner-box:after,
+.market-section .row .m-block:nth-child(4) .inner-box:after,
 .market-section .row .m-block:nth-child(5) .inner-box:after,
-.market-section .row .m-block:nth-child(6) .inner-box:after{
+.market-section .row .m-block:nth-child(7) .inner-box:after,
+.market-section .row .m-block:nth-child(8) .inner-box:after,
+.market-section .row .m-block:nth-child(9) .inner-box:after{
 	content:'';
 	position:absolute;
 	left:-30px;
@@ -2434,9 +2437,10 @@ img{
 	border-bottom:1px solid rgba(255,255,255,0.20);
 }
 
-.market-section .row .m-block:nth-child(4) .inner-box,
-.market-section .row .m-block:nth-child(5) .inner-box,
-.market-section .row .m-block:nth-child(6) .inner-box{
+.market-section .row .m-block:nth-child(6) .inner-box,
+.market-section .row .m-block:nth-child(7) .inner-box,
+.market-section .row .m-block:nth-child(8) .inner-box,
+.market-section .row .m-block:nth-child(9) .inner-box{
 	border-bottom:none;
 }
 
@@ -3013,32 +3017,12 @@ img{
 }
 
 .info-block:after{
-	position:absolute;
-	content:'';
-	left:100%;
-	top:25px;
-	width:92px;
-	height:34px;
-	margin-left:-40px;
-	display:inline-block;
-	background:url(../images/icons/arrow-1.png) right top no-repeat;
-}
-
-.info-block:last-child::after{
 	display:none;
-}
-
-.info-block:nth-child(2)::after{
-	background:url(../images/icons/arrow-2.png) right top no-repeat;
 }
 
 .info-block .inner-box{
 	position:relative;
 	text-align:center;
-}
-
-.info-block .inner-box{
-	position:relative;
 }
 
 .info-block .inner-box .icon-box{
@@ -3050,7 +3034,7 @@ img{
 	font-size:52px;
 	color:#ffffff;
 	margin:0 auto;
-	margin-bottom:15px;
+	margin-bottom:20px;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -3064,30 +3048,15 @@ img{
 }
 
 .info-block .inner-box .icon-box:after{
-	position:absolute;
-	content:'';
-	left:12px;
-	bottom:-40px;
-	height:50px;
-	width:1px;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	background-color:rgba(255,255,255,0.20);
-}
-
-.info-block .inner-box:hover .icon-box:after{
-	background-color:rgba(255,255,255,0.60);
+	display:none;
 }
 
 .info-block .inner-box h3{
 	position:relative;
 	font-size:18px;
 	font-weight:500;
-	text-align:left;
-	margin-left:120px;
+	text-align:center;
+	margin-left:0;
 }
 
 .info-block .inner-box h3 a{
@@ -3104,7 +3073,17 @@ img{
 	color:#020e28;
 }
 
-/*** 
+.info-block .inner-box .info-desc{
+	position:relative;
+	color:rgba(255,255,255,0.80);
+	font-size:14px;
+	line-height:1.8em;
+	margin-left:0;
+	margin-top:10px;
+	text-align:center;
+}
+
+/***
 
 ====================================================================
 	Achivements Section
@@ -3324,7 +3303,7 @@ img{
 
 .clients-section{
 	position:relative;
-	padding:50px 0px 50px;
+	padding:80px 0px 80px;
 	background-color:#f4f4f4;
 }
 
@@ -11783,6 +11762,408 @@ img{
 }
 
 .social-links-two .google-plus{
-	background:#dd4b39;	
+	background:#dd4b39;
 }
 
+/* Slide Gradient Overlays */
+.slide-one-gradient-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #0b2738 0%, rgba(11, 39, 56, 0.6) 40%, transparent 70%);
+	z-index: 5;
+	pointer-events: none;
+}
+
+.slide-two-gradient-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left, #0b2738 0%, rgba(11, 39, 56, 0.6) 40%, transparent 70%);
+	z-index: 5;
+	pointer-events: none;
+}
+
+
+/*** 
+
+====================================================================
+    Why Choose Us Section
+====================================================================
+
+ ***/
+
+.why-choose-section {
+    position: relative;
+}
+
+.why-choose-upper {
+    position: relative;
+    padding: 80px 0 60px;
+    background-image: url('../images/background/10.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.why-choose-upper:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(2, 14, 40, 0.88);
+}
+
+.why-choose-upper .auto-container {
+    position: relative;
+    z-index: 1;
+}
+
+.why-choose-upper .sec-title {
+    margin-bottom: 50px;
+}
+
+.wcu-desc-text {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.9em;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.wcu-stats-column {
+    padding-left: 0;
+}
+
+.wcu-stat-block {
+    padding: 25px 20px;
+}
+
+.wcu-stat-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wcu-stat-icon {
+    font-size: 44px;
+    color: #ffffff;
+    line-height: 1;
+    margin-right: 15px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.wcu-stat-count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #f55b14;
+    line-height: 1;
+}
+
+.wcu-stat-label {
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Feature Cards */
+.wcu-lower {
+    position: relative;
+}
+
+.wcu-lower .row {
+    margin: 0;
+}
+
+.wcu-feature-block {
+    padding: 0;
+}
+
+.wcu-feature-inner {
+    padding: 55px 40px;
+    height: 100%;
+    min-height: 220px;
+}
+
+.wcu-style-light {
+    background-color: #f2f2f2;
+}
+
+.wcu-style-orange {
+    background-color: #f55b14;
+}
+
+.wcu-style-dark {
+    background-color: #1a1a1a;
+}
+
+.wcu-feature-icon {
+    font-size: 52px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.wcu-style-light .wcu-feature-icon {
+    color: #f55b14;
+}
+
+.wcu-style-orange .wcu-feature-icon,
+.wcu-style-dark .wcu-feature-icon {
+    color: #ffffff;
+}
+
+.wcu-feature-inner h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.wcu-style-light h3 {
+    color: #222222;
+}
+
+.wcu-style-orange h3,
+.wcu-style-dark h3 {
+    color: #ffffff;
+}
+
+.wcu-feature-text {
+    font-size: 15px;
+    line-height: 1.8em;
+}
+
+.wcu-style-light .wcu-feature-text {
+    color: #666666;
+}
+
+.wcu-style-orange .wcu-feature-text,
+.wcu-style-dark .wcu-feature-text {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/***
+
+====================================================================
+    Chemical Analysis Table Section
+====================================================================
+
+***/
+
+.chemical-analysis-section {
+    margin: 40px 0 35px;
+}
+
+.chem-sec-title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.chem-sec-title h3 {
+    font-size: 26px;
+    color: #f55b14;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    line-height: 1.2;
+}
+
+.chem-sec-title h3::after {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 2px;
+    background: #333333;
+    flex-shrink: 0;
+    margin-left: 4px;
+}
+
+.chemical-table-wrapper {
+    border: 1px solid #cccccc;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chemical-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5px;
+    font-family: 'Rubik', sans-serif;
+    min-width: 900px;
+    background: #fff;
+}
+
+.chemical-table th,
+.chemical-table td {
+    border: 1px solid #cccccc;
+    padding: 6px 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.35;
+}
+
+/* Top header row — dark navy */
+.chemical-table thead tr:first-child th {
+    background: #1a1a2e;
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 8px 6px;
+}
+
+/* Second header row — light grey */
+.chemical-table thead tr:last-child th {
+    background: #f2f2f2;
+    color: #333333;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+/* Germany DIN column — dark header in both rows */
+.chemical-table .din-col {
+    background: #1a1a2e;
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 600;
+    min-width: 58px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.chemical-table .grade-subhead {
+    background: #1a1a2e;
+    color: #ffffff;
+}
+
+.chemical-table .applications-header {
+    min-width: 180px;
+}
+
+/* Body cells */
+.chemical-table tbody tr td {
+    color: #555555;
+    font-size: 11.5px;
+}
+
+.chemical-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.chemical-table tbody tr:hover {
+    background-color: #fff5f0;
+    transition: background-color 0.15s ease;
+}
+
+.chemical-table tbody tr td:first-child {
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.grade-link {
+    color: #1a6abf;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.grade-link:hover {
+    color: #f55b14;
+    text-decoration: underline;
+}
+
+.chemical-table .applications-col {
+    text-align: left;
+    min-width: 190px;
+    max-width: 240px;
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 7px 9px;
+}
+
+/***
+
+====================================================================
+    Grade Equivalent Table Section
+====================================================================
+
+***/
+
+.grade-equiv-section {
+    margin: 40px 0 35px;
+}
+
+.grade-equiv-wrapper {
+    border: 1px solid #cccccc;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.grade-equiv-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5px;
+    font-family: 'Rubik', sans-serif;
+    min-width: 780px;
+    background: #fff;
+}
+
+.grade-equiv-table th,
+.grade-equiv-table td {
+    border: 1px solid #cccccc;
+    padding: 7px 6px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.35;
+}
+
+.grade-equiv-table thead tr th {
+    background: #1a1a2e;
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 8px 6px;
+}
+
+.grade-equiv-table tbody tr td {
+    color: #555555;
+    font-size: 11.5px;
+}
+
+.grade-equiv-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.grade-equiv-table tbody tr:hover {
+    background-color: #fff5f0;
+    transition: background-color 0.15s ease;
+}
+
+.grade-equiv-table tbody tr td:first-child {
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+}

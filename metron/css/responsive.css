@@ -1,5 +1,41 @@
 /* The Metron - Industry and Factory HTML Template */
 
+/* Chemical Analysis Table - Responsive */
+@media only screen and (max-width: 991px) {
+    .chem-sec-title h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .chem-sec-title h3 {
+        font-size: 20px;
+    }
+    .chem-sec-title h3::after {
+        width: 35px;
+    }
+    /* Table scrolls horizontally inside its wrapper — no page overflow */
+    .chemical-table-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Grade Equivalent Table - Responsive */
+@media only screen and (max-width: 767px) {
+    .grade-equiv-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grade-equiv-table {
+        font-size: 10.5px;
+    }
+    .grade-equiv-table th,
+    .grade-equiv-table td {
+        padding: 5px 4px;
+    }
+}
+
 @media only screen and (max-width: 1600px){
 
 	.page-wrapper{
@@ -1245,5 +1281,102 @@
 		margin-bottom:20px;
 		display:block;
 	}
-	
+
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+
+	.market-section .row{
+		margin:0px -15px;
+	}
+
+	.market-section .row .m-block{
+		padding:0px 15px;
+	}
+
+	.market-block .inner-box{
+		border: 1px solid rgba(255,255,255,0.20) !important;
+		padding:30px 20px;
+	}
+
+	.market-section .market-block .inner-box:before{
+		left:0px;
+		right:0px;
+	}
+
+	.market-block .inner-box .view_all{
+		left:20px;
+	}
+
+	.market-section .row .m-block:nth-child(3) .inner-box:after,
+	.market-section .row .m-block:nth-child(4) .inner-box:after,
+	.market-section .row .m-block:nth-child(5) .inner-box:after,
+	.market-section .row .m-block:nth-child(7) .inner-box:after,
+	.market-section .row .m-block:nth-child(8) .inner-box:after,
+	.market-section .row .m-block:nth-child(9) .inner-box:after{
+		display:none;
+	}
+
+}
+
+/* Why Choose Us Section */
+@media only screen and (max-width: 991px) {
+
+    .wcu-stats-column {
+        margin-top: 35px;
+        padding-top: 10px;
+    }
+
+    .wcu-desc-text {
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .wcu-stat-count {
+        font-size: 30px;
+    }
+
+    .wcu-stat-icon {
+        font-size: 34px;
+        margin-right: 10px;
+    }
+
+    .wcu-feature-inner {
+        padding: 40px 30px;
+        min-height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+
+    .wcu-stat-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wcu-stat-icon {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .wcu-stat-count {
+        font-size: 26px;
+    }
+
+    .wcu-stat-label {
+        font-size: 11px;
+    }
+
+    .wcu-feature-inner {
+        padding: 35px 25px;
+    }
+
+}
+
