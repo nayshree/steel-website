@@ -58,10 +58,7 @@
 			$(this).prev('.mega-menu').slideToggle(500);
 		});
 		
-		//Disable dropdown parent link
-		$('.main-header .main-menu .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function(e) {
-			e.preventDefault();
-		});
+
 	}
 	
 	

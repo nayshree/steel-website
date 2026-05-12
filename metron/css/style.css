@@ -3418,13 +3418,13 @@ img{
 
 .main-footer{
 	position:relative;
-	background-color:#020e28;
+	background-color:#ffffff;
 	z-index:10;
 }
 
 .main-footer .widgets-section{
 	position:relative;
-	padding:80px 0px 40px;
+	padding:80px 0px 0px;
 }
 
 .main-footer .footer-widget{
@@ -3441,7 +3441,7 @@ img{
 	position:relative;
 	font-size:20px;
 	font-weight:500;
-	color:#ffffff;
+	color:#333333;
 	padding-bottom:18px;
 	text-transform:capitalize;
 }
@@ -3465,13 +3465,15 @@ img{
 }
 
 .main-footer .logo-widget .logo{
-	position:relative;
-	margin-bottom:25px;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: -35px;
+    margin-top: -11px;
 }
 
 .main-footer .logo-widget .widget-content .text{
 	position:relative;
-	color:#ffffff;
+	color:#333333;
 	font-size:16px;
 	font-weight:400;
 	margin-bottom:12px;
@@ -3484,7 +3486,7 @@ img{
 
 .main-footer .logo-widget .widget-content > .list > li{
 	position:relative;
-	color:#c4c4c4;
+	color:#333333;
 	font-size:16px;
 	padding-right:12px;
 	margin-right:12px;
@@ -3501,12 +3503,12 @@ img{
 
 .main-footer .logo-widget .widget-content .timing{
 	position:relative;
-	color:#ffffff;
+	color:#333333;
 	font-size:16px;
 	line-height:1.8em;
-	padding-bottom:28px;
+	/* padding-bottom:28px;
 	margin-bottom:25px;
-	border-bottom:1px solid rgba(255,255,255,0.10);
+	border-bottom:1px solid rgba(255,255,255,0.10); */
 }
 
 .main-footer .logo-widget .widget-content .timing span{
@@ -3530,7 +3532,7 @@ img{
 
 .main-footer .links li a{
 	position:relative;
-	color:#c4c4c4;
+	color:#333333;
 	font-size:16px;
 	padding-bottom:5px;
 	-webkit-transition:all 300ms ease;
@@ -3561,7 +3563,7 @@ img{
 }
 
 .main-footer .links li a:hover{
-	color:#ffffff;
+	color:#333333;
 }
 
 .main-footer .footer-bottom{
@@ -12166,4 +12168,145 @@ img{
     font-weight: 600;
     font-size: 12px;
     white-space: nowrap;
+}
+
+/* ── Chemical Composition Tables ── */
+.chem-composition-section {
+    margin-bottom: 32px;
+}
+
+.chem-composition-section .chem-comp-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.chem-composition-section .chem-comp-title h3 {
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: #f55b14;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.chem-composition-section .chem-comp-title .title-line {
+    flex: 1;
+    height: 2px;
+    background: #e0e0e0;
+}
+
+.comp-table-block {
+    width: 100%;
+    margin-bottom: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 320px;
+}
+
+.comp-table th {
+    background-color: #f0f0f0;
+    color: #020e28;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    letter-spacing: 0.5px;
+}
+
+.comp-table td {
+    text-align: center;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #f55b14;
+    font-weight: 500;
+    background: #fff;
+}
+
+/* Get In Touch Banner */
+.get-in-touch-banner {
+    background: #f55b14;
+    padding: 45px 0;
+}
+
+.get-in-touch-banner .touch-inner {
+    display: flex;
+    align-items: center;
+}
+
+.get-in-touch-banner .touch-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.get-in-touch-banner .touch-title h2 em {
+    color: #020e28;
+    font-style: italic;
+}
+
+.get-in-touch-banner .touch-title h2 .touch-title-line {
+    display: inline-block;
+    width: 35px;
+    height: 2px;
+    background: #ffffff;
+    flex-shrink: 0;
+}
+
+.get-in-touch-banner .touch-title p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    margin: 0;
+}
+
+.get-in-touch-banner .touch-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.get-in-touch-banner .touch-icon-wrap {
+    width: 58px;
+    height: 58px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.get-in-touch-banner .touch-icon-wrap .fa {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.get-in-touch-banner .touch-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch-banner .touch-contact-label {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.get-in-touch-banner .touch-contact-value {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
 }
