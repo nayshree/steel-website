@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 420" width="570" height="420">
+  <defs>
+    <linearGradient id="ci-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1520"/>
+      <stop offset="100%" stop-color="#172334"/>
+    </linearGradient>
+
+    <!-- Metallic top face -->
+    <linearGradient id="ci-metalTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c2cfd9"/>
+      <stop offset="25%" stop-color="#dce7ef"/>
+      <stop offset="50%" stop-color="#edf3f8"/>
+      <stop offset="75%" stop-color="#c8d4de"/>
+      <stop offset="100%" stop-color="#9aaab8"/>
+    </linearGradient>
+    <linearGradient id="ci-metalTop2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b5c4d2"/>
+      <stop offset="25%" stop-color="#d4e0ea"/>
+      <stop offset="50%" stop-color="#e6ecf2"/>
+      <stop offset="75%" stop-color="#bccad4"/>
+      <stop offset="100%" stop-color="#93a3b2"/>
+    </linearGradient>
+
+    <!-- Metallic front face -->
+    <linearGradient id="ci-metalFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8898a8"/>
+      <stop offset="40%" stop-color="#78889a"/>
+      <stop offset="80%" stop-color="#58687a"/>
+      <stop offset="100%" stop-color="#38485a"/>
+    </linearGradient>
+    <linearGradient id="ci-metalFront2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#98a8b8"/>
+      <stop offset="40%" stop-color="#8898aa"/>
+      <stop offset="80%" stop-color="#687888"/>
+      <stop offset="100%" stop-color="#485868"/>
+    </linearGradient>
+
+    <!-- Right side face -->
+    <linearGradient id="ci-metalRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#687888"/>
+      <stop offset="100%" stop-color="#384858"/>
+    </linearGradient>
+    <linearGradient id="ci-metalRight2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#788898"/>
+      <stop offset="100%" stop-color="#485868"/>
+    </linearGradient>
+
+    <!-- Orange accent -->
+    <linearGradient id="ci-orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c8440a"/>
+      <stop offset="50%" stop-color="#f55b14"/>
+      <stop offset="100%" stop-color="#ff7d40"/>
+    </linearGradient>
+    <linearGradient id="ci-orangeV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f55b14"/>
+      <stop offset="100%" stop-color="#c8440a"/>
+    </linearGradient>
+
+    <!-- Highlight sweep -->
+    <linearGradient id="ci-highlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="75%" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="ci-shadow" x="-5%" y="-5%" width="115%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+
+    <clipPath id="ci-clip">
+      <rect width="570" height="420"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#ci-clip)">
+
+    <!-- ── Background ── -->
+    <rect width="570" height="420" fill="url(#ci-bg)"/>
+
+    <!-- Blueprint grid -->
+    <g stroke="#2a4e72" stroke-width="0.5" opacity="0.18">
+      <line x1="60"  y1="0" x2="60"  y2="420"/>
+      <line x1="120" y1="0" x2="120" y2="420"/>
+      <line x1="180" y1="0" x2="180" y2="420"/>
+      <line x1="240" y1="0" x2="240" y2="420"/>
+      <line x1="300" y1="0" x2="300" y2="420"/>
+      <line x1="360" y1="0" x2="360" y2="420"/>
+      <line x1="420" y1="0" x2="420" y2="420"/>
+      <line x1="480" y1="0" x2="480" y2="420"/>
+      <line x1="540" y1="0" x2="540" y2="420"/>
+      <line x1="0" y1="60"  x2="570" y2="60"/>
+      <line x1="0" y1="120" x2="570" y2="120"/>
+      <line x1="0" y1="180" x2="570" y2="180"/>
+      <line x1="0" y1="240" x2="570" y2="240"/>
+      <line x1="0" y1="300" x2="570" y2="300"/>
+      <line x1="0" y1="360" x2="570" y2="360"/>
+    </g>
+
+    <!-- Orange left accent strip -->
+    <rect x="0" y="0" width="6" height="420" fill="url(#ci-orangeV)"/>
+
+    <!-- ── Crystal / atomic structure — top-right decorative ── -->
+    <g opacity="0.22" stroke="#4a90c0" stroke-width="1" fill="none" transform="translate(490,52)">
+      <polygon points="0,-32 28,-16 28,16 0,32 -28,16 -28,-16"/>
+      <line x1="0" y1="-32" x2="0"  y2="32"/>
+      <line x1="28" y1="-16" x2="-28" y2="16"/>
+      <line x1="-28" y1="-16" x2="28" y2="16"/>
+      <circle cx="0"   cy="0"   r="4" fill="#4a90c0" opacity="0.5"/>
+      <circle cx="0"   cy="-32" r="2.5" fill="#4a90c0" opacity="0.5"/>
+      <circle cx="28"  cy="-16" r="2.5" fill="#4a90c0" opacity="0.5"/>
+      <circle cx="28"  cy="16"  r="2.5" fill="#4a90c0" opacity="0.5"/>
+      <circle cx="0"   cy="32"  r="2.5" fill="#4a90c0" opacity="0.5"/>
+      <circle cx="-28" cy="16"  r="2.5" fill="#4a90c0" opacity="0.5"/>
+      <circle cx="-28" cy="-16" r="2.5" fill="#4a90c0" opacity="0.5"/>
+    </g>
+    <g opacity="0.14" stroke="#4a90c0" stroke-width="0.8" fill="none" transform="translate(535,105)">
+      <polygon points="0,-20 17,-10 17,10 0,20 -17,10 -17,-10"/>
+      <line x1="0" y1="-20" x2="0" y2="20"/>
+      <circle cx="0" cy="0" r="3" fill="#4a90c0" opacity="0.4"/>
+    </g>
+
+    <!-- Precision crosshair — top-left decorative -->
+    <g opacity="0.22" stroke="#4a90c0" stroke-width="0.8" fill="none" transform="translate(55,52)">
+      <circle cx="0" cy="0" r="20"/>
+      <circle cx="0" cy="0" r="11"/>
+      <circle cx="0" cy="0" r="3.5" fill="#4a90c0" opacity="0.4"/>
+      <line x1="-28" y1="0" x2="-15" y2="0"/>
+      <line x1="15"  y1="0" x2="28"  y2="0"/>
+      <line x1="0" y1="-28" x2="0" y2="-15"/>
+      <line x1="0" y1="15"  x2="0" y2="28"/>
+      <!-- Tick marks -->
+      <line x1="-20" y1="-6" x2="-20" y2="6" stroke-width="0.5"/>
+      <line x1="20"  y1="-6" x2="20"  y2="6" stroke-width="0.5"/>
+      <line x1="-6" y1="-20" x2="6" y2="-20" stroke-width="0.5"/>
+      <line x1="-6" y1="20"  x2="6" y2="20"  stroke-width="0.5"/>
+    </g>
+
+    <!-- ════════════════════════════════════════════════════
+         ISOMETRIC STEEL BARS
+         Cabinet projection: depth 28px right, 28px up
+         Bars: x_left=108, x_right=416 (width=308)
+         Bar heights: 40px each, gap 12px
+         Bar 1 front: y 98–138   top face: y 70–98
+         Bar 2 front: y 150–190  top face: y 122–150
+         Bar 3 front: y 202–242  top face: y 174–202
+         Bar 4 front: y 254–294  top face: y 226–254
+         Right side ends at x=444
+         ════════════════════════════════════════════════════ -->
+
+    <!-- ── Bar 4 (bottom) ── -->
+    <rect x="108" y="254" width="308" height="40" fill="url(#ci-metalFront2)" filter="url(#ci-shadow)"/>
+    <polygon points="108,254 416,254 444,226 136,226" fill="url(#ci-metalTop2)"/>
+    <polygon points="416,254 416,294 444,266 444,226"  fill="url(#ci-metalRight2)"/>
+    <line x1="108" y1="254" x2="416" y2="254" stroke="url(#ci-highlight)" stroke-width="1.5"/>
+    <!-- Orange left accent wedge on top face -->
+    <polygon points="108,254 136,226 148,226 120,254" fill="#f55b14" opacity="0.75"/>
+    <!-- Grade label -->
+    <text x="170" y="279" font-family="'Courier New',monospace" font-size="9.5" letter-spacing="2.5" fill="#ccd8e4" opacity="0.75">P20 · PLASTIC MOULD STEEL</text>
+    <text x="120" y="279" font-family="'Courier New',monospace" font-size="8.5" fill="#f55b14" font-weight="700">AX</text>
+    <!-- Mill scratch marks -->
+    <line x1="108" y1="265" x2="416" y2="265" stroke="#ffffff" stroke-width="0.3" opacity="0.1"/>
+    <line x1="108" y1="272" x2="416" y2="272" stroke="#ffffff" stroke-width="0.3" opacity="0.08"/>
+    <line x1="108" y1="285" x2="416" y2="285" stroke="#ffffff" stroke-width="0.3" opacity="0.06"/>
+
+    <!-- ── Bar 3 ── -->
+    <rect x="108" y="202" width="308" height="40" fill="url(#ci-metalFront)" filter="url(#ci-shadow)"/>
+    <polygon points="108,202 416,202 444,174 136,174" fill="url(#ci-metalTop)"/>
+    <polygon points="416,202 416,242 444,214 444,174"  fill="url(#ci-metalRight)"/>
+    <line x1="108" y1="202" x2="416" y2="202" stroke="url(#ci-highlight)" stroke-width="1.5"/>
+    <polygon points="108,202 136,174 148,174 120,202" fill="#f55b14" opacity="0.75"/>
+    <text x="170" y="227" font-family="'Courier New',monospace" font-size="9.5" letter-spacing="2.5" fill="#ccd8e4" opacity="0.75">M2 · HIGH SPEED TOOL STEEL</text>
+    <text x="120" y="227" font-family="'Courier New',monospace" font-size="8.5" fill="#f55b14" font-weight="700">AX</text>
+    <line x1="108" y1="213" x2="416" y2="213" stroke="#ffffff" stroke-width="0.3" opacity="0.1"/>
+    <line x1="108" y1="220" x2="416" y2="220" stroke="#ffffff" stroke-width="0.3" opacity="0.08"/>
+    <line x1="108" y1="233" x2="416" y2="233" stroke="#ffffff" stroke-width="0.3" opacity="0.06"/>
+
+    <!-- ── Bar 2 ── -->
+    <rect x="108" y="150" width="308" height="40" fill="url(#ci-metalFront2)" filter="url(#ci-shadow)"/>
+    <polygon points="108,150 416,150 444,122 136,122" fill="url(#ci-metalTop2)"/>
+    <polygon points="416,150 416,190 444,162 444,122"  fill="url(#ci-metalRight2)"/>
+    <line x1="108" y1="150" x2="416" y2="150" stroke="url(#ci-highlight)" stroke-width="1.5"/>
+    <polygon points="108,150 136,122 148,122 120,150" fill="#f55b14" opacity="0.75"/>
+    <text x="170" y="175" font-family="'Courier New',monospace" font-size="9.5" letter-spacing="2.5" fill="#ccd8e4" opacity="0.75">D2 · COLD WORK DIE STEEL</text>
+    <text x="120" y="175" font-family="'Courier New',monospace" font-size="8.5" fill="#f55b14" font-weight="700">AX</text>
+    <line x1="108" y1="161" x2="416" y2="161" stroke="#ffffff" stroke-width="0.3" opacity="0.1"/>
+    <line x1="108" y1="168" x2="416" y2="168" stroke="#ffffff" stroke-width="0.3" opacity="0.08"/>
+    <line x1="108" y1="181" x2="416" y2="181" stroke="#ffffff" stroke-width="0.3" opacity="0.06"/>
+
+    <!-- ── Bar 1 (top) ── -->
+    <rect x="108" y="98" width="308" height="40" fill="url(#ci-metalFront)" filter="url(#ci-shadow)"/>
+    <polygon points="108,98 416,98 444,70 136,70" fill="url(#ci-metalTop)"/>
+    <polygon points="416,98 416,138 444,110 444,70"  fill="url(#ci-metalRight)"/>
+    <line x1="108" y1="98" x2="416" y2="98" stroke="url(#ci-highlight)" stroke-width="1.5"/>
+    <polygon points="108,98 136,70 148,70 120,98" fill="#f55b14" opacity="0.75"/>
+    <text x="170" y="123" font-family="'Courier New',monospace" font-size="9.5" letter-spacing="2.5" fill="#ccd8e4" opacity="0.75">H13 · HOT WORK TOOL STEEL</text>
+    <text x="120" y="123" font-family="'Courier New',monospace" font-size="8.5" fill="#f55b14" font-weight="700">AX</text>
+    <line x1="108" y1="109" x2="416" y2="109" stroke="#ffffff" stroke-width="0.3" opacity="0.1"/>
+    <line x1="108" y1="116" x2="416" y2="116" stroke="#ffffff" stroke-width="0.3" opacity="0.08"/>
+    <line x1="108" y1="129" x2="416" y2="129" stroke="#ffffff" stroke-width="0.3" opacity="0.06"/>
+
+    <!-- Dimension arrow — left side indicating height -->
+    <g stroke="#4a8ab0" stroke-width="0.8" fill="none" opacity="0.35">
+      <line x1="95" y1="98"  x2="95" y2="294"/>
+      <line x1="90" y1="98"  x2="100" y2="98"/>
+      <line x1="90" y1="294" x2="100" y2="294"/>
+      <line x1="88" y1="194" x2="95"  y2="194" stroke-dasharray="2 2"/>
+    </g>
+    <text x="82" y="197" font-family="'Courier New',monospace" font-size="7.5"
+          fill="#4a8ab0" opacity="0.4" text-anchor="middle" transform="rotate(-90,82,197)">196mm</text>
+
+    <!-- ── DIVIDER ── -->
+    <line x1="18" y1="307" x2="552" y2="307" stroke="#1e3a52" stroke-width="1"/>
+    <rect x="0" y="307" width="570" height="1" fill="#f55b14" opacity="0.3"/>
+
+    <!-- ── BOTTOM INFO PANEL ── -->
+
+    <!-- Chemical composition block -->
+    <text x="20" y="325" font-family="Arial,sans-serif" font-size="8.5" font-weight="700"
+          letter-spacing="2" fill="#f55b14">CHEMICAL COMPOSITION</text>
+
+    <!-- C bar -->
+    <text x="20" y="340" font-family="'Courier New',monospace" font-size="8.5" fill="#8a9eb0"> C </text>
+    <rect x="38" y="333" width="64" height="6" rx="1.5" fill="#0d1e2e"/>
+    <rect x="38" y="333" width="25" height="6" rx="1.5" fill="#4a80aa" opacity="0.85"/>
+    <text x="106" y="340" font-family="'Courier New',monospace" font-size="7.5" fill="#6a8aaa">0.38%</text>
+
+    <!-- Cr bar -->
+    <text x="20" y="354" font-family="'Courier New',monospace" font-size="8.5" fill="#8a9eb0">Cr </text>
+    <rect x="38" y="347" width="64" height="6" rx="1.5" fill="#0d1e2e"/>
+    <rect x="38" y="347" width="50" height="6" rx="1.5" fill="#3a70a0" opacity="0.85"/>
+    <text x="106" y="354" font-family="'Courier New',monospace" font-size="7.5" fill="#6a8aaa">5.20%</text>
+
+    <!-- Mo bar -->
+    <text x="20" y="368" font-family="'Courier New',monospace" font-size="8.5" fill="#8a9eb0">Mo </text>
+    <rect x="38" y="361" width="64" height="6" rx="1.5" fill="#0d1e2e"/>
+    <rect x="38" y="361" width="38" height="6" rx="1.5" fill="#2a6090" opacity="0.85"/>
+    <text x="106" y="368" font-family="'Courier New',monospace" font-size="7.5" fill="#6a8aaa">1.35%</text>
+
+    <!-- V bar -->
+    <text x="20" y="382" font-family="'Courier New',monospace" font-size="8.5" fill="#8a9eb0"> V </text>
+    <rect x="38" y="375" width="64" height="6" rx="1.5" fill="#0d1e2e"/>
+    <rect x="38" y="375" width="20" height="6" rx="1.5" fill="#1a5080" opacity="0.85"/>
+    <text x="106" y="382" font-family="'Courier New',monospace" font-size="7.5" fill="#6a8aaa">0.95%</text>
+
+    <!-- Si bar -->
+    <text x="20" y="396" font-family="'Courier New',monospace" font-size="8.5" fill="#8a9eb0">Si </text>
+    <rect x="38" y="389" width="64" height="6" rx="1.5" fill="#0d1e2e"/>
+    <rect x="38" y="389" width="14" height="6" rx="1.5" fill="#0e4070" opacity="0.85"/>
+    <text x="106" y="396" font-family="'Courier New',monospace" font-size="7.5" fill="#6a8aaa">0.35%</text>
+
+    <!-- Vertical divider -->
+    <line x1="195" y1="315" x2="195" y2="412" stroke="#1e3a52" stroke-width="0.8"/>
+
+    <!-- Standards block -->
+    <text x="207" y="325" font-family="Arial,sans-serif" font-size="8.5" font-weight="700"
+          letter-spacing="2" fill="#f55b14">STANDARDS</text>
+    <g font-family="'Courier New',monospace" font-size="8.5" fill="#6a8aaa">
+      <text x="207" y="341">● IS:1570 / DIN EN ISO 4957</text>
+      <text x="207" y="357">● ASTM A681 / BS 4659</text>
+      <text x="207" y="373">● Mill 3.1 Certificates</text>
+      <text x="207" y="389">● Spectrometric Verified</text>
+      <text x="207" y="405">● Zero-PPM Traceability</text>
+    </g>
+
+    <!-- Vertical divider -->
+    <line x1="390" y1="315" x2="390" y2="412" stroke="#1e3a52" stroke-width="0.8"/>
+
+    <!-- Brand block -->
+    <rect x="391" y="307" width="179" height="113" fill="#f55b14" opacity="0.06"/>
+    <rect x="391" y="307" width="4"   height="113" fill="url(#ci-orangeV)" opacity="0.8"/>
+
+    <text x="480" y="337" font-family="Arial,sans-serif" font-size="20" font-weight="800"
+          fill="#ffffff" text-anchor="middle" letter-spacing="4">AUREMAX</text>
+    <line x1="400" y1="345" x2="560" y2="345" stroke="#f55b14" stroke-width="0.8" opacity="0.45"/>
+    <text x="480" y="360" font-family="Arial,sans-serif" font-size="8" font-weight="400"
+          fill="#8090a0" text-anchor="middle" letter-spacing="3">INDUSTRIES PVT. LTD.</text>
+
+    <line x1="400" y1="373" x2="560" y2="373" stroke="#1e3a52" stroke-width="0.6"/>
+
+    <text x="480" y="388" font-family="Arial,sans-serif" font-size="8"
+          fill="#5a6a7a" text-anchor="middle" letter-spacing="2">SPECIAL STEEL SOLUTIONS</text>
+    <text x="480" y="403" font-family="Arial,sans-serif" font-size="7.5"
+          fill="#4a5a6a" text-anchor="middle" letter-spacing="1">Since 2003 · Mumbai, India</text>
+
+    <!-- Bottom orange stripe -->
+    <rect x="0" y="413" width="570" height="7" fill="url(#ci-orange)" opacity="0.8"/>
+
+  </g>
+</svg>

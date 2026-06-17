@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Auremax - Steel Suppliers</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!--<link href="css/color.css" rel="stylesheet">-->
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+        <div id="header-placeholder"></div>
+    <!--End Main Header -->
+    
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/6.jpg)">
+        <div class="auto-container">
+            <ul class="page-breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Contact Us</li>
+            </ul>
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--RFQ Section-->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="content-side col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="market-single">
+                        <div class="inner-box">
+                            <div class="lower-content">
+                                <h2>Accelerate Your Procurement Cycle Today</h2>
+                                <div class="text">
+                                    <p>Submit your target steel grades, required dimensional forms, and weight parameters below. Our commercial sales desk will process your inquiry and return a fully itemized, transparent commercial quotation within hours.</p>
+                                </div>
+
+                                <!--RFQ Form-->
+                                <h3 style="font-size:20px; font-weight:600; color:#020e28; margin-bottom:20px; padding-bottom:10px; border-bottom:2px solid #f55b14;">Submit Your Enquiry</h3>
+                                <div class="contact-form" style="margin-top: 20px;">
+                                    <form id="contact-form">
+                                        <input type="hidden" name="access_key" value="34ad7958-4db7-4207-847c-9380fff40bbd">
+                                        <input type="hidden" name="subject" value="New RFQ - Auremax Industries">
+                                        <input type="hidden" name="from_name" value="Auremax RFQ Form">
+                                        <div class="row clearfix">
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <input type="text" name="full_name" placeholder="Full Name &amp; Designation" required>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <input type="text" name="company" placeholder="Corporate Entity Name" required>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <input type="email" name="email" placeholder="Verified Corporate Email Address" required>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <input type="tel" name="phone" placeholder="Phone / WhatsApp Business Number" required>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <select class="custom-select-box" name="steel_category">
+                                                    <option value="">Target Metallurgical Category</option>
+                                                    <option>Plastic Mould Steel</option>
+                                                    <option>Cold Work Steel</option>
+                                                    <option>Hot Work Steel</option>
+                                                    <option>High-Speed Steel</option>
+                                                    <option>Carbon &amp; Alloy Steel</option>
+                                                    <option>Technical Match Required</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <select class="custom-select-box" name="material_form">
+                                                    <option value="">Material Form Profile</option>
+                                                    <option>Hot-Rolled Round Bar</option>
+                                                    <option>Forged Heavy Block</option>
+                                                    <option>Flat Plate Section</option>
+                                                    <option>Custom-Cut Blanks</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <textarea name="dimensions" placeholder="Target Dimensions &amp; Total Tonnage/Quantity — e.g., 250 mm Dia x 600 mm Length, 4 Pieces required"></textarea>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <input type="text" name="delivery_location" placeholder="Final Delivery Destination / Postal Code">
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <input type="file" name="attachment" accept=".pdf,.dxf,.png" style="padding: 10px; background:#f9f9f9; border:1px solid #ddd; width:100%; font-size:14px;">
+                                                <small style="color:#999; font-size:12px;">Attach Spec Sheet / CAD Drawing — PDF, DXF, PNG up to 10MB</small>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <div id="form-success" style="display:none; background:#e8f5e9; color:#2e7d32; padding:12px 16px; border-radius:4px; margin-bottom:12px; font-size:15px;">
+                                                    &#10003; Your RFQ has been submitted! We will respond with a quotation shortly.
+                                                </div>
+                                                <div id="form-error" style="display:none; background:#ffebee; color:#c62828; padding:12px 16px; border-radius:4px; margin-bottom:12px; font-size:15px;">
+                                                    &#10007; Something went wrong. Please try again or contact us directly.
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <button class="theme-btn submit-btn" type="submit" id="submit-btn">Submit Request For Quote <span class="icon flaticon-right-arrow-1"></span></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End RFQ Form-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End RFQ Section-->
+
+    <!--Corporate Office Section-->
+    <div class="sidebar-page-container" style="background:#f9f9f9; padding-top: 50px;">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="content-side col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="market-single">
+                        <div class="inner-box">
+                            <div class="lower-content">
+                                <h2>Corporate Office &amp; Central Logistics Hub Details</h2>
+
+                                <div class="row clearfix" style="margin-top: 32px;">
+
+                                    <!--Addresses Column-->
+                                    <div class="col-md-8 col-sm-12 col-xs-12">
+                                        <div class="treatment-cap-item" style="margin-bottom: 20px;">
+                                            <div class="treatment-cap-number"><span class="fa fa-building"></span></div>
+                                            <div class="treatment-cap-body">
+                                                <h4 class="treatment-cap-title">Auremax Industries Corporate Headquarters</h4>
+                                                <p>1/1, Kanji Mansion, Charni Road East, Mumbai - 400 004</p>
+                                            </div>
+                                        </div>
+                                        <div class="treatment-cap-item">
+                                            <div class="treatment-cap-number"><span class="fa fa-truck"></span></div>
+                                            <div class="treatment-cap-body">
+                                                <h4 class="treatment-cap-title">Central Distribution &amp; Automated Sawing Yard</h4>
+                                                <p>13 A, Magazine street, Reay Road, Darukhana, Mumbai - 400 010</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Contact Lines Column-->
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                        <div class="treatment-cap-item" style="flex-direction: column; gap: 14px;">
+                                            <div class="treatment-cap-body" style="width:100%;">
+                                                <h4 class="treatment-cap-title">Direct Communication Access Lines</h4>
+                                                <ul class="treatment-cap-list">
+                                                    <li><strong>Commercial Quoting Desk:</strong> sales@auremaxindustries.com</li>
+                                                    <li><strong>Metallurgical Advisory Desk:</strong> tech@auremaxindustries.com</li>
+                                                    <li><strong>Central Enterprise Hotline:</strong> +91 9783278182</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Corporate Office Section-->
+    
+  
+
+    
+        <!--Main Footer-->
+    <div id="footer-placeholder"></div>
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script>
+    $("#header-placeholder").load("header.html");
+    $("#footer-placeholder").load("footer.html");
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Contact Form Handler (Web3Forms) -->
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var btn = document.getElementById('submit-btn');
+        var successMsg = document.getElementById('form-success');
+        var errorMsg = document.getElementById('form-error');
+
+        btn.disabled = true;
+        btn.innerHTML = 'Sending... <span class="icon flaticon-right-arrow-1"></span>';
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        var formData = new FormData(this);
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            if (data.success) {
+                successMsg.style.display = 'block';
+                document.getElementById('contact-form').reset();
+            } else {
+                errorMsg.style.display = 'block';
+            }
+        })
+        .catch(function() {
+            errorMsg.style.display = 'block';
+        })
+        .finally(function() {
+            btn.disabled = false;
+            btn.innerHTML = 'Submit Request For Quote <span class="icon flaticon-right-arrow-1"></span>';
+        });
+    });
+</script>
+
+</body>
+
+
+</html>
